@@ -1,6 +1,5 @@
 package com.example.alexc.instagramclone;
 
-
 import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
@@ -10,26 +9,25 @@ import android.view.MenuItem;
 import com.example.alexc.instagramclone.Utils.BottomNavigationViewHelper;
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class HomeActivity extends AppCompatActivity {
+public class ProfileActivity extends AppCompatActivity {
 
-    private static final String TAG = "HomeActivity";
-    private static final int ACTIVITY_NUM = 0;
-    private Context mContext = HomeActivity.this;
+    private static final String TAG = "ProfileActivity";
+    private static final int ACTIVITY_NUM = 4;
+    private Context mContext = ProfileActivity.this;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home);
 
-        Log.d(TAG, "onCreate: starting");
+        setContentView(R.layout.activity_home);
+        Log.d(TAG, "onCreate: started");
 
         setupBottomNavigationView();
     }
-    /*
-    * Customize HomeNavigationView
-    * */
+
     private void setupBottomNavigationView() {
         Log.d(TAG, "setupBottomNavigationView: setting up BottomNavigationView");
         BottomNavigationViewEx bottomNavigationViewEx = findViewById(R.id.bottomNavViewBar);
