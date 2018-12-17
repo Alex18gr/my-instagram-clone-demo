@@ -1,12 +1,12 @@
-package com.example.alexc.instagramclone;
+package com.example.alexc.instagramclone.Search;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.os.PersistableBundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.example.alexc.instagramclone.R;
 import com.example.alexc.instagramclone.Utils.BottomNavigationViewHelper;
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 

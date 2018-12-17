@@ -1,4 +1,4 @@
-package com.example.alexc.instagramclone;
+package com.example.alexc.instagramclone.Share;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -6,17 +6,19 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.example.alexc.instagramclone.R;
 import com.example.alexc.instagramclone.Utils.BottomNavigationViewHelper;
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class ProfileActivity extends AppCompatActivity {
+public class ShareActivity extends AppCompatActivity {
 
-    private static final String TAG = "ProfileActivity";
-    private static final int ACTIVITY_NUM = 4;
-    private Context mContext = ProfileActivity.this;
+    private Context mContext = ShareActivity.this;
+
+    private static final String TAG = "ShareActivity";
+    private static final int ACTIVITY_NUM = 2;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {

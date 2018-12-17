@@ -5,12 +5,12 @@ import android.content.Intent;
 import android.util.Log;
 import android.view.MenuItem;
 
-import com.example.alexc.instagramclone.HomeActivity;
-import com.example.alexc.instagramclone.LikesActivity;
-import com.example.alexc.instagramclone.ProfileActivity;
+import com.example.alexc.instagramclone.Home.HomeActivity;
+import com.example.alexc.instagramclone.Likes.LikesActivity;
+import com.example.alexc.instagramclone.Profile.ProfileActivity;
 import com.example.alexc.instagramclone.R;
-import com.example.alexc.instagramclone.SearchActivity;
-import com.example.alexc.instagramclone.ShareActivity;
+import com.example.alexc.instagramclone.Search.SearchActivity;
+import com.example.alexc.instagramclone.Share.ShareActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 
