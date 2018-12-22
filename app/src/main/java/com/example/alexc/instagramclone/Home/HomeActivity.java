@@ -6,10 +6,10 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.TableLayout;
 
 import com.example.alexc.instagramclone.R;
 import com.example.alexc.instagramclone.Utils.BottomNavigationViewHelper;
+import com.example.alexc.instagramclone.Utils.SectionsPagerAdapter;
 import com.google.android.material.tabs.TabLayout;
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 

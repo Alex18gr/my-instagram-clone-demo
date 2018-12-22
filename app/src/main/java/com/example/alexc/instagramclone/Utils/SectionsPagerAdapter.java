@@ -1,4 +1,4 @@
-package com.example.alexc.instagramclone.Home;
+package com.example.alexc.instagramclone.Utils;
 
 import java.util.ArrayList;
 import java.util.List;
