@@ -14,16 +14,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:text="@string/options"
-                    android:textSize="20sp"
-                    android:textColor="@color/black"
-                    android:layout_marginStart="5dp"
-                    android:id="@+id/profileName"
-                    android:layout_toRightOf="@+id/backArrow"/>
                 <ImageView
                     android:layout_width="30dp"
                     android:layout_height="30dp"
@@ -32,6 +22,28 @@
                     android:layout_centerVertical="true"
                     android:id="@+id/backArrow"
                     android:src="@drawable/ic_backarrow"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/edit_profile"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="5dp"
+                    android:id="@+id/profileName"
+                    android:layout_toRightOf="@+id/backArrow"/>
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/saveChange"
+                    android:src="@drawable/ic_checkmark"
+                    android:layout_alignParentRight="true"/>
+
 
 
             </RelativeLayout>

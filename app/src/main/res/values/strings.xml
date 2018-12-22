@@ -3,4 +3,6 @@
     <string name="profile_settings">profile settings</string>
     <string name="edit_profile_fragment">Edit Profile</string>
     <string name="sign_out_fragment">Sign Out</string>
+    <string name="options">Options</string>
+    <string name="edit_profile">Edit Profile</string>
 </resources>
