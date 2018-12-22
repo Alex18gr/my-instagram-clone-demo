@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">InstagramClone</string>
+    <string name="profile_settings">profile settings</string>
 </resources>

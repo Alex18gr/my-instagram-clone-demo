@@ -1,10 +1,13 @@
 package com.example.alexc.instagramclone.Profile;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageView;
 
 import com.example.alexc.instagramclone.R;
 import com.example.alexc.instagramclone.Utils.BottomNavigationViewHelper;
@@ -35,6 +38,16 @@ public class ProfileActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.profileToolbar);
         setSupportActionBar(toolbar);
 
+        ImageView profileMenu = findViewById(R.id.profileMenu);
+//        profileMenu.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Log.d(TAG, "onClick: navigating to account settings");
+//                Intent intent = new Intent(mContext, AccountSettingActivity.class);
+//                startActivity(intent);
+//            }
+//        });
+
         toolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
             @Override
             public boolean onMenuItemClick(MenuItem item) {
@@ -44,6 +57,8 @@ public class ProfileActivity extends AppCompatActivity {
                 switch(item.getItemId()) {
                     case R.id.profileMenu:
                         Log.d(TAG, "onMenuItemClick: Navigating to Profile Preferences");
+                        Intent intent = new Intent(mContext, AccountSettingActivity.class);
+                        startActivity(intent);
                         break;
                 }
 
