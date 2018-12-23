@@ -23,10 +23,10 @@ public class LikesActivity extends AppCompatActivity {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_home);
+        setContentView(R.layout.activity_login);
         Log.d(TAG, "onCreate: started");
 
-        setupBottomNavigationView();
+        //setupBottomNavigationView();
     }
 
     private void setupBottomNavigationView() {
