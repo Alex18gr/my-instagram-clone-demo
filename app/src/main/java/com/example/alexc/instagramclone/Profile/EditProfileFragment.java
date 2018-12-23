@@ -9,7 +9,6 @@ import android.widget.ImageView;
 
 import com.example.alexc.instagramclone.R;
 import com.example.alexc.instagramclone.Utils.UniversalImageLoader;
-import com.nostra13.universalimageloader.core.ImageLoader;
 import com.squareup.picasso.Picasso;
 
 import androidx.annotation.NonNull;
@@ -29,17 +28,23 @@ public class EditProfileFragment extends Fragment {
 
         mProfilePhoto = view.findViewById(R.id.profile_photo);
 
-        initImageLoader();
         //setProfilePhotoPicasso();
         setProfileImage();
+
+        // back arrow for nav igatinf back to ProfileActivity
+        ImageView backArrow = view.findViewById(R.id.backArrow);
+        backArrow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Log.d(TAG, "onClick: navigatin back to ProfileActivity");
+                getActivity().finish();
+            }
+        });
 
         return view;
     }
 
-    private void initImageLoader() {
-        UniversalImageLoader universalImageLoader = new UniversalImageLoader(getActivity());
-        ImageLoader.getInstance().init(universalImageLoader.getConfig());
-    }
+
 
     private void setProfileImage() {
         Log.d(TAG, "setProfileImage: setting profile image.");
@@ -50,4 +55,6 @@ public class EditProfileFragment extends Fragment {
     private void setProfilePhotoPicasso() {
         Picasso.get().load("http://i.imgur.com/DvpvklR.png").into(mProfilePhoto);
     }
+
+
 }
