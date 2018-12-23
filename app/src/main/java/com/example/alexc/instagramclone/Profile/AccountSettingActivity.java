@@ -56,7 +56,7 @@ public class AccountSettingActivity extends AppCompatActivity {
         pagerAdapter.addFragment(new SignOutFragment(), getString(R.string.sign_out_fragment));
     }
     
-    private void setupViewPager(int fragmentNumber) {
+    private void setViewPager(int fragmentNumber) {
         mRelativeLayout.setVisibility(View.GONE);
         Log.d(TAG, "setupViewPager: navigating to fragment number #: " + fragmentNumber);
         mViewPager.setAdapter(pagerAdapter);
@@ -79,6 +79,7 @@ public class AccountSettingActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Log.d(TAG, "onItemClick: navigating to fragment #: " + i);
+                setViewPager(i);
             }
         });
 
