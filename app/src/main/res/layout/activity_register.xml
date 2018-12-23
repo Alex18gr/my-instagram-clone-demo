@@ -11,10 +11,12 @@
         android:paddingLeft="25dp"
         android:paddingRight="25dp">
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="80dp"
-            android:src="@drawable/instagram_logo"
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/register_new_account"
+            android:textSize="25dp"
+            android:textColor="@color/black"
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="40dp"/>
 
@@ -40,6 +42,20 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="Full Name"
+                android:id="@+id/input_username"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:inputType="textPassword"
                 android:hint="@string/password_hint"
                 android:id="@+id/input_password"/>
@@ -51,27 +67,17 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="25dp"
             android:layout_marginTop="25dp"
-            android:text="@string/login"
-            android:id="@+id/btnLogin"
+            android:text="@string/register"
+            android:id="@+id/btnRegister"
             android:padding="12dp"
             android:background="@drawable/white_rounded_button"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="25dp"
-            android:text="@string/create_account_link"
-            android:gravity="center"
-            android:textSize="16sp"
-            android:id="@+id/link_signup"
-            android:textColor="@color/linkBlue"/>
 
     </LinearLayout>
 
     <ProgressBar
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:id="@+id/loginRequestLoadingProgressbar"
+        android:id="@+id/registerRequestLoadingProgressbar"
         android:layout_centerInParent="true"/>
     <TextView
         android:layout_width="wrap_content"
@@ -79,8 +85,8 @@
         android:text="Please wait..."
         android:textColor="@color/black"
         android:textSize="20sp"
-        android:layout_alignBottom="@+id/loginRequestLoadingProgressbar"
-        android:layout_alignRight="@+id/loginRequestLoadingProgressbar"
-        android:layout_alignLeft="@+id/loginRequestLoadingProgressbar" />
+        android:layout_alignBottom="@+id/registerRequestLoadingProgressbar"
+        android:layout_alignRight="@+id/registerRequestLoadingProgressbar"
+        android:layout_alignLeft="@+id/registerRequestLoadingProgressbar" />
 
 </RelativeLayout>

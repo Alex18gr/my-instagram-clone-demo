@@ -13,4 +13,6 @@
     <string name="email_hint">email</string>
     <string name="login">Login</string>
     <string name="create_account_link">No account yet? Create one</string>
+    <string name="register_new_account">Register a new Account</string>
+    <string name="register">Register</string>
 </resources>
